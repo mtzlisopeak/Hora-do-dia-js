@@ -18,16 +18,19 @@ setInterval(function(){
     else if (hora < 13){
         imagem.src = "img/dia.jpg"
         labelHora.innerHTML = `${hora}:${minutos}`
-        container.style.background = "rgba(255, 255, 255, 0.409)"
+        container.style.background = "rgba(255, 255, 255, 0.609)"
         body.style.background = "skyblue"
+        255, 255, 130
     }
 
     else if (hora < 18){
         imagem.src = "img/tarde.jpg"
         labelHora.innerHTML = `${hora}:${minutos}`
-        body.style.background = "salmon"
+        body.style.background = "rgb(255, 147, 96)"
         title.style.color = "white"
-        labelHora.style.color = "white"
+        container.style.background = "rgba(255, 255, 255, 0.384)"
+        labelHora.style.color = "rgb(36,36,36)"
+        
     }
 
     else if (hora <= 24){
