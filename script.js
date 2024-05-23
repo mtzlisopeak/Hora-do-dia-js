@@ -5,8 +5,8 @@ let labelHora = document.querySelector("#hora")
 let body = document.body
 
 setInterval(function(){
-    hora = new Date().getHours().toLocaleString('pt-br', {dateStyle: 'short'})
-    minutos = new Date().getMinutes().toLocaleString('pt-br', {dateStyle: 'short'})
+    hora = new Date().getHours()
+    minutos = new Date().getMinutes().toString().padStart(2, '0')
 
     if (hora < 6){
         imagem.src = "img/madrugada.jpg"
